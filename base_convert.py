@@ -9,5 +9,7 @@ def convert(num, b):
     if quotient == 0:
         return convert_string[remainder]
     
+    # concatenate the converted quotient 
+    # with the current remainder as a single character string
     return convert(quotient,b) + convert_string[remainder]
 print(convert(316,16))
