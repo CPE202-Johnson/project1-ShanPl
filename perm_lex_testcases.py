@@ -5,7 +5,7 @@ class TestAssign1(unittest.TestCase):
 
     def test_perm_gen_lex(self):
         self.assertEqual(perm_lex.perm_gen_lex('ab'),['ab','ba'])
-        self.assertEqual(perm_lex.perm_gen_lex(''), [''])
+        self.assertEqual(perm_lex.perm_gen_lex(''), [])
         self.assertEqual(perm_lex.perm_gen_lex('a'), ['a'])
         self.assertEqual(perm_lex.perm_gen_lex('abc'), ['abc', 'acb', 'bac', 'bca', 'cab', 'cba'])
 

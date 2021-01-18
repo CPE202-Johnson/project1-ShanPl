@@ -2,7 +2,7 @@
 # purpose generate all permutations of a string and add them to a list
 def perm_gen_lex(word): # ex: word = 'abc'
     if len(word) <= 0:
-        return [''] #[]
+        return [] #[]
     if len(word) == 1: 
         #return single letter in the form of a list with a single string
         return [word] #['a']
@@ -21,4 +21,3 @@ def perm_gen_lex(word): # ex: word = 'abc'
             i+= 1
         index += 1
     return all_words #['abc, acb, bac, bca, ...']
-print(perm_gen_lex(''))
