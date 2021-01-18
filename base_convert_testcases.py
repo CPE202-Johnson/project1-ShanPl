@@ -12,6 +12,7 @@ class TestBaseConvert(unittest.TestCase):
     def test_base16(self):
         self.assertEqual(convert(316,16),"13C")
     
+    #additional random number conversions with other bases
     def test_base5(self):
         self.assertEqual(convert(123456,5), "12422311")
     

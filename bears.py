@@ -24,9 +24,9 @@ def bears(n):
     div_5 = False
 
     if n == 42:
-        return True
+        return True #win
     if n <= 0:
-        return False
+        return False #lose
     if n%2 == 0: #if even, give back n/2 bears
         div_2 = bears(n/2)
     if ((n%3 == 0) or (n%4 == 0)) and div_2 == False:
